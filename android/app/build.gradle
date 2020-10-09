@@ -151,7 +151,7 @@ android {
             keyPassword 'android'
         }
         release {
-               storeFile rootProject.file("app/my-upload-key.keystore")
+               storeFile file("my-upload-key.keystore")
                storePassword System.getProperty("APPCENTER_KEYSTORE_PASSWORD")
                keyAlias System.getProperty("APPCENTER_KEY_ALIAS")
                keyPassword System.getProperty("APPCENTER_KEY_PASSWORD")
